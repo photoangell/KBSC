@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import socket
 import urllib2
-import webbrowser
+#import webbrowser
 import os
 import glob
 
@@ -38,7 +38,7 @@ for files in glob.glob("KBSC_*.*"):
 	filelist.append(files)
 
 oldpic = ""
-if len(filelist) > 0:	
+if len(filelist) > 0:
 	newest = max(filelist)
 	#print filen
 	fin = open(newest, "rb")
@@ -50,8 +50,8 @@ if (oldpic != my_picture): # or (len(filelist) == 0):
 	# picture_page[-4:] extracts extension eg. .gif
 	# (most image file extensions have three letters, otherwise modify)
 	filename = "KBSC_" + d.strftime("%Y_%m_%d_%H_%M_%S") + ".jpg"
-	#+ picture_page[-4:] 
-	
+	#+ picture_page[-4:]
+
 	#print filename  # test
 	fout = open(filename, "wb")
 	fout.write(my_picture)
