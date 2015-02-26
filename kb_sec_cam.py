@@ -18,7 +18,7 @@ socket.setdefaulttimeout(timeout)
 # open the web page picture and read it into a variable
 # **need to wrap this in a try loop
 opener1 = urllib2.build_opener()
-page1 = opener1.open(picture_page)
+page1 = opener1.open(picture_page, None, 180)
 my_picture = page1.read()
 
 #compare with most recent file.
