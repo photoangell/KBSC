@@ -9,7 +9,8 @@ from datetime import datetime
 
 d = datetime.utcnow()
 
-picture_page = "http://www.tfl.gov.uk/tfl/livetravelnews/trafficcams/cctv/0000106710.jpg"
+#picture_page = "http://www.tfl.gov.uk/tfl/livetravelnews/trafficcams/cctv/0000106710.jpg"
+picture_page = "http://s3-eu-west-1.amazonaws.com/tfl.pub/Jamcams/0000106710.jpg"
 # timeout in seconds
 timeout = 180
 socket.setdefaulttimeout(timeout)
@@ -64,7 +65,3 @@ if (oldpic != my_picture): # or (len(filelist) == 0):
 	#os.startfile(filename)
 #else:
 #	print "file is same"
-
-
-
-
